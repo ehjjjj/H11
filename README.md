@@ -3,45 +3,21 @@
 
 <strong>Please read the entire file before you start working on this exercise.</strong><br>
 
-In this Exercise you will build your own linkedlist data structure and part of its operations.
+In this Exercise you will build your own linkedlist data structure. Also, you will be implementing linkedlist operations.
  
 
 # Learning Goals
-* Solve Josephus problem.
-* Understand permutation.
-* Deepen your understanding of the use of loops.
+* Understand linkedlist.
+* Deepen your understanding of pointers and memory addresses.
+* Deepen your understanding of memory allocation and deallocation.
 
-## Josephus problem
- Josephus Problem (or Josephus permutation) is a theoretical problem. Following is the problem statement:
+
+## LinkedList
+ Linked list is is a data structure consisting of a group of nodes which together represent a sequence or a chain. Each node has a link or a pointer to the next node in the chain execpt for the last node in the linkedlist which is pointing at NULL.
  
-There are n elements in a array to be counted out (one element per step). The counting out begins at index=0 and proceeds through the array in a fixed direction. In each step, a certain number of elements are skipped and the next element is ruled out. The elimination proceeds through the array (which is becoming smaller and smaller as elements are counted out), until one last element remains (wins the game). Given the total number of elements n and a number k which indicates that k-1 elements are skipped and kth element is out.
-
-`NOTE: the element you start counting from will no be included in counting. Also, when element is removed, you will start again from the next element that succeeds the removed one.`
-
-For example, let assume that the array size(n) is 6, and k=2. <br>
-`Note: ruled out numbers will be marked by (X)`
-<pre>
-0 1 2 3 4 5 // at the begining, start from index=0, counting k, you will stop at 2, then 2 will be out.
-0 1 X 3 4 5 // after counting out number 2, the next index to start from will be index=3. Then, you will stop at 5, the 5 will be out.
-0 1 X 3 4 X // index=0, next element to be out is 3 (The ruled out elements won't be counted).
-0 1 X X 4 X // index=4, next element to be out is 1.
-0 X X X 4 X // index=4, next element to be out is 0 (keep in mind that index will not be counted).
-X X X X 4 X // 4 wins.
-</pre>
-
-`Note: k can be greater than n`
-
-For example, let assume that the array size(n) is 6, and k=7.<br> `Note:ruled out numbers will be marked by (X)`
-<pre>
-0 1 2 3 4 5 // index=0, counting k, you will stop at 2, then 2 will be out.
-0 1 X 3 4 5 // index=3, counting k, you will stop at 0, the 0 will be out.
-X 1 X 3 4 5 // index=1, next element to be out is 3.
-X 1 X X 4 5 // index=4, next element to be out is 5.
-X 1 X X 4 X // index=1, next element to be out is 4.
-X 1 X X X X // 1 wins.
-</pre>
-
-`Note: n and k both have to be greater than one.`
+ Why linkedlist?
+ - Nodes don't have to be stored in contiguous memory locations. Make use of fragmented memory.
+ - The allocation is not static instead it's dynamic. The size of the linkedlist can be changed during the running time of the program.
 
 
 # TO DO
