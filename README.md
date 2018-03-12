@@ -43,7 +43,7 @@ For this part you have to implement three functions: <br>
 
 `deleteAllMatches()`- In this function you will delete the all nodes which have a value equals to v. If none of the nodes have a value equals to v, there will be no change made on the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAllMatches()` with value equals to 3. The linkedlist after deletion should look like this B(2). <br>
 
-`deleteAt()`- In this function you will delete the node at index i if possible. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=0. The linkedlist after deletion should look like this B(2), C(3). Another example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=3. It is not possible. So,  the linkedlist will not change and it will look like this A(3), B(2), C(3).<br><br>>
+`deleteAt()`- In this function you will delete the node at index i if possible. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=0. The linkedlist after deletion should look like this B(2), C(3). Another example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=3. It is not possible. So,  the linkedlist will not change and it will look like this A(3), B(2), C(3).<br>
 
 ### Length of the linkedList
 For this part you have to implement one function:<br>
