@@ -51,7 +51,7 @@ For this part you have to implement one function:<br>
 
 ### Deallocation of linkedlist
 For this part you have to implement one function:<br> 
-`freeMemory()`- In this function you will deallocate the linkedlist from memory.
+`freeMemory()`- In this function you will deallocate the linkedlist from memory.<br>
 
 ### Printing linkedlist
 For this part you have to implement one function:<br>
