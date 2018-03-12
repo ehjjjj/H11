@@ -1,10 +1,9 @@
 # HW11. Linkedlist
 ## This is an Exercise, and it is related to HW10 and HW12.
 
-<strong>Please read the entire file before you ask any question.</strong><br>
+<strong>Please read the entire file before you start working on this exercise.</strong><br>
 
-In this Exercise you will solve a theoretical problem related to a certain counting-out game (Josephus problem).
-https://www.youtube.com/watch?v=uCsD3ZGzMgE
+In this Exercise you will build your own linkedlist data structure and part of its operations.
  
 
 # Learning Goals
