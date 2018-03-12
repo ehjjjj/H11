@@ -28,14 +28,14 @@ Mainly you have to work on impelementing four main operations:
  * Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory. </br>
  
 <strong> Insertion of nodes </strong>
-For this part you have to implement three functions:<br>
+For this part you have to implement three functions:<br><br>
 `insertFirst()`- In this function you will insert node n to the head of the linkedlist. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertFirst()` node D. The linkedlist after insertion should look like this D, A, B, C. <br>
 
 `insertLast()`- In this function you will insert node n to the tail of the linkedlist. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertLast()` node D. The linkedlist after insertion should look like this A, B, C, D.<br>
 
 `insertAt()`- In this function you will insert node n at index i in the linkedlist if possible. For example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=0. The linkedlist after insertion should look like this D, A, B, C. Another example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=3. The linkedlist after insertion should look like this A, B, C, D. But, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=4. It is not possible so the linkedlist will not change and it will look like this A, B, C.<br>
 
-`Note: we access the linkedlist as array, the first index is index=0 which is the head of the linedlist.`
+`Note: we access the linkedlist as array, the first index is index=0 which is the head of the linkedlist.`
 
 # Testing your code
 Following are the files we provide:
