@@ -22,8 +22,8 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
 
 # TO DO
 Mainly you have to work on impelementing four main operations:
- * Insert to linkedlist. </br>
- * Delete from linkedlist. </br>
+ * Insert nodes to the linkedlist. </br>
+ * Delete node from the linkedlist. </br>
  * Traverese the linkedlist to compute its length. </br>
  * Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory. </br>
 
