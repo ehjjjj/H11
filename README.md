@@ -21,7 +21,7 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
  - insertion at (or deletion from) any position in constant time.
 
 # TO DO
-Mainly you have to work on impelementing four main operations. </br>
+Mainly you have to work on impelementing four main operations:
  * Insert to linkedlist. </br>
  * Delete from linkedlist. </br>
  * Traverese the linkedlist to compute its length. </br>
