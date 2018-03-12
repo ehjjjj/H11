@@ -62,12 +62,33 @@ For this part you have to implement one function:<br>
 
 # Testing your code
 Following are the files we provide:
-1. `pe10.c` This file should have josephus() and print() functions implemented.
-2. `pe10.h` 
-3. `main.c`This file should have the main() function implemented.
+1. `pe11.c` This file has all the functions to be implemented.
+2. `pe11.h`
+3. `main.c`This file has the main() function to be implemented.
+
+### Commands
+`insF v` - This command means you have to insert a node n at the head of the linkedlist with value v. For example, If the linkedlist has 2, and 3. After `insF 11`, the linkedlist should look like this 11, 2, 3. (`insertFirst()`)<br>
+
+`insL v` - This command means you have to insert a node n at the tail of the linkedlist with value v. For example, If the linkedlist has 2, and 3. After `insL 11`, the linkedlist should look like this 2, 3, 11. (`insertLast()`)<br>
+
+`insA v i` - This command means you have to insert a node n with value v at the index i. For example, If the linkedlist has 2, and 3. After `insA 11 1`, the linkedlist should look like this 2, 11, 3. (`insertAt()`)<br>
+
+`delFM v` - This command means you have to delete the first node with value v. For example, If the linkedlist has 2, 3, 2. After `delFM 2`, the linkedlist should look like this 3, 2. (`deleteFirstMatch()`)<br>
+
+`delAM v` - This command means you have to delete all nodes with value v. For example, If the linkedlist has 2, 3, 2. After `delAM 2`, the linkedlist should look like this 3. (`deleteAllMatches()`)<br>
+
+`delA i` - This command means you have to delete the node at index i. For example, If the linkedlist has 2, 3, 2. After `delA 1`, the linkedlist should look like this 2, 2. (`deleteAt()`)<br>
+
+`L ` - This command means you have to print the length of the linkedlist. For example, If the linkedlist has 2, 3, 2. After `L `, you should print 3. (`getLength()`)<br>
+
+
+
+To test your code, you will find the commands for the linkedlist operation in the testfiles. 
+
+
 
 `NOTE:Please follow the printing format you find in the cases .txt files.`<br>
-To test your code, we provide you with 6 different cases:<br>
+To test your code, we provide you with 3 different cases:<br>
 
 The following command should create a boolean array of length 10, k=3, p=1. The output of this command is in case1.txt
 `./pe10 10 3 1 > case1.txt`<br>
