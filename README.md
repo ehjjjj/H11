@@ -35,7 +35,7 @@ For this part you have to implement three functions:<br><br>
 
 `insertAt()`- In this function you will insert node n at index i in the linkedlist if possible. For example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=0. The linkedlist after insertion should look like this D, A, B, C. Another example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=3. The linkedlist after insertion should look like this A, B, C, D. But, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=4. It is not possible. So,  the linkedlist will not change and it will look like this A, B, C.<br>
 
-`Note: we access the linkedlist as array, the first index is index=0 which is the head of the linkedlist.`<br>
+`Note: we access the linkedlist as array, the first index is index=0 which is the head of the linkedlist.`<br><br><br>
 
 ### Deletion of nodes
 For this part you have to implement three functions: <br>
