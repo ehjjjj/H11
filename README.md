@@ -1,5 +1,5 @@
-# HW10. Josephus problem using array.
-## This is an Exercise, and it is related to HW11 and HW12.
+# HW11. Linkedlist
+## This is an Exercise, and it is related to HW10 and HW12.
 
 <strong>Please read the entire file before you ask any question.</strong><br>
 
