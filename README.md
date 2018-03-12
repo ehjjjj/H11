@@ -27,7 +27,7 @@ Mainly you have to work on impelementing four main operations:
  * Traverese the linkedlist to compute its length. </br>
  * Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory. </br>
  
-<strong> &nbsp &nbsp Insertion of nodes </strong><br>
+<strong> <&nbsp;> <&nbsp;> Insertion of nodes </strong><br>
 For this part you have to implement three functions:<br><br>
 `insertFirst()`- In this function you will insert node n to the head of the linkedlist. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertFirst()` node D. The linkedlist after insertion should look like this D, A, B, C. <br>
 
