@@ -22,10 +22,10 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
 
 # TO DO
 Mainly you have to work on impelementing four main operations. </br>
-1- Insert to linkedlist. </br>
-2- Delete from linkedlist. </br>
-3- Traverese the linkedlist to compute its length. </br>
-4- Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory. </br>
+ * Insert to linkedlist. </br>
+ * Delete from linkedlist. </br>
+ * Traverese the linkedlist to compute its length. </br>
+ * Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory. </br>
 
 <strong> Insertion of nodes </strong>
 
