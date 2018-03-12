@@ -13,7 +13,7 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
 
 
 ## LinkedList
- Linked list is is a data structure consisting of a group of nodes which together represent a sequence or a chain. Each node has a link or a pointer to the next node in the chain execpt for the last node (tail) in the linkedlist which is pointing at NULL. The first node in the linkedlist is the head node.
+ Linked list is is a data structure consisting of a group of nodes which together represent a sequence or a chain. Each node has a link or a pointer to the next node in the chain except for the last node (tail) in the linkedlist which is pointing at NULL. The first node in the linkedlist is the head node.
  
  Why linkedlist?
  - Nodes don't have to be stored in contiguous memory locations.
@@ -36,6 +36,8 @@ For this part you have to implement three functions:<br><br>
 `insertAt()`- In this function you will insert node n at index i in the linkedlist if possible. For example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=0. The linkedlist after insertion should look like this D, A, B, C. Another example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=3. The linkedlist after insertion should look like this A, B, C, D. But, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=4. It is not possible so the linkedlist will not change and it will look like this A, B, C.<br>
 
 `Note: we access the linkedlist as array, the first index is index=0 which is the head of the linkedlist.`
+
+<strong> Deletion of nodes </strong>
 
 # Testing your code
 Following are the files we provide:
