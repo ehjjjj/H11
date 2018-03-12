@@ -47,7 +47,17 @@ For this part you have to implement three functions: <br>
 
 ### Length of the linkedList
 For this part you have to implement one function:<br>
-`getLength()`- In this function you will traverse the linkedlist to count the number of nodes, and return it. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). And you want to `getLength()`. The function will return 4.<br>
+`getLength()`- In this function you will traverse the linkedlist to count the number of nodes, and return it. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). And you want to `getLength()`. The function will return 4.<br><br>
+
+### Deallocation of linkedlist
+For this part you have to implement one function:<br> 
+`freeMemory()`- In this function you will deallocate the linkedlist from memory.
+
+### Printing linkedlist
+For this part you have to implement one function:<br>
+`print()`- In this function you will print the fontent of the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). Calling `print()` will output `3,2,3,5`. Note that there is no extra comma at the beginning nor at the end. <br>
+
+`Note: If the linkedlist is empty you have to print empty line '\n' `
 
 
 # Testing your code
