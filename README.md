@@ -20,15 +20,22 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
  - The allocation is dynamic not static. The size of the linkedlist can be changed during the running time of the program (the size is not required to be known in advance).
  - insertion at (or deletion from) any position in constant time.
 
-#### TO DO
+## TO DO
 Mainly you have to work on impelementing four main operations:
  * Insert nodes to the linkedlist. </br>
  * Delete node from the linkedlist. </br>
  * Traverese the linkedlist to compute its length. </br>
  * Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory. </br>
-
+ 
 <strong> Insertion of nodes </strong>
+For this part you have to implement three functions:
+`insertFirst()`- In this function you will insert node n to the head of the linkedlist. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertFirst()` node D. The linkedlist after insertion should look like this D, A, B, C. <br>
 
+`insertLast()`- In this function you will insert node n to the tail of the linkedlist. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertLast()` node D. The linkedlist after insertion should look like this A, B, C, D.<br>
+
+`insertAt()`- In this function you will insert node n at index i in the linkedlist if possible. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertAt()` node D at index=0. The linkedlist after insertion should look like this D, A, B, C. Another example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertAt()` node D at index=3. The linkedlist after insertion should look like this A, B, C, D. Another example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertAt()` node D at index=4. It is not possible so the linkedlist will not change and it will look like this A, B, C.<br>
+
+`Note: we access the linkedlist as array, the first index is index=0 which is the head of the linedlist.`
 
 # Testing your code
 Following are the files we provide:
