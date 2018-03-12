@@ -21,17 +21,14 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
  - insertion at (or deletion from) any position in constant time.
 
 # TO DO
-<strong>josephus()</strong> </br>
-In this function you will implement the solution for Josephus problem. To do so, you will be using a boolean array that you have to initialize to 1's (true) beforehand. Based on the value of `k`, the values of the array will start flipping to 0's (false). The function should stop iterating when the array has only one value as 1 (true) left. Also, whenever the number of remaining elements (number of 1's) is divisible by `p` you should print out the array as will be shown next (call print() function).</br>
+Mainly you have to work on impelementing four main operations.
+1- Insert to linkedlist.
+2- Delete from linkedlist.
+3- Traverese the linkedlist to compute its length.
+4- Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory.
 
-<strong>print()</strong>  </br>
-This function will print the boolean array in the following format: <br>
-* Print the index if its corresponding value in the array is true, Otherwise print X instead. For instance, If the array is of length
-   4, and it has values of true(index=0),false(index=1),true(index=2),false(index=3).<br> // the output should look like this: `0,X,2,X`  </br>
-* There should be no extra comma at the end nor at the beginning. For example, `,0,X,2,X` or `0,X,2,X,` formats are both wrong. </br>
-* Make sure that there is a new line at the end of the output.
+<strong> Insertion of nodes </strong>
 
-`NOTE: Violating this format will get you zero for this function`
 
 # Testing your code
 Following are the files we provide:
