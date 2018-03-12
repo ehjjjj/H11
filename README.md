@@ -16,9 +16,9 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
  Linked list is is a data structure consisting of a group of nodes which together represent a sequence or a chain. Each node has a link or a pointer to the next node in the chain execpt for the last node in the linkedlist which is pointing at NULL.
  
  Why linkedlist?
- - Nodes don't have to be stored in contiguous memory locations. Make use of fragmented memory.
- - The allocation is not static instead it's dynamic. The size of the linkedlist can be changed during the running time of the program.
-
+ - Nodes don't have to be stored in contiguous memory locations.
+ - The allocation is dynamic not static. The size of the linkedlist can be changed during the running time of the program (the size is not required to be known in advance).
+ - insertion at (or deletion from) any position in constant time.
 
 # TO DO
 <strong>josephus()</strong> </br>
