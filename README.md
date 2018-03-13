@@ -55,7 +55,7 @@ For this part you have to implement one function:<br><br>
 
 ### Printing linkedlist
 For this part you have to implement one function:<br><br>
-`print()`- In this function you will print the fontent of the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). Calling `print()` will output `3,2,3,5`. Note that there is no extra comma at the beginning nor at the end. <br>
+`print()`- In this function you will print the content of the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). Calling `print()` will output `3,2,3,5`. Note that there is no extra comma at the beginning nor at the end. <br>
 
 `Note: If the linkedlist is empty you have to print an empty line '\n' `
 
