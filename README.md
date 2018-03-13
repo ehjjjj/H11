@@ -83,7 +83,7 @@ Following are the files we provide:
 
 `Note: After each command you have to call print() function except for "L ". If the linkedlist is empty you should print a new line` <br>
 
-`Hint: you can use fgets() for reading commands from test files ( command per line), and strtok() for parsing the command by spaces` <br>
+`Hint: you can use fgets() for reading commands from test files (command per line), and strtok() for parsing the command by spaces` <br>
 
 To test your code, you will find the commands for the linkedlist operation in the test files.
 
