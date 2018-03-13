@@ -13,7 +13,7 @@ In this Exercise you will build your own linkedlist data structure. Also, you wi
 
 
 ## LinkedList
- Linked list is is a data structure consisting of a group of nodes which together represent a sequence or a chain. Each node has a link or a pointer to the next node in the chain except for the last node (tail) in the linkedlist which is pointing at NULL. The first node in the linkedlist is the head node.
+ Linked list is a data structure consisting of a group of nodes which together represent a sequence or a chain. Each node has a link or a pointer to the next node in the chain except for the last node (tail) in the linkedlist which is pointing at NULL. The first node in the linkedlist is the head node.
  
  Why linkedlist?
  - Nodes don't have to be stored in contiguous memory locations.
