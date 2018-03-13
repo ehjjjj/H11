@@ -38,7 +38,7 @@ For this part you have to implement three functions:<br><br>
 `Note: we access the linkedlist as array, the first index is index=0 which is the head of the linkedlist.`<br><br>
 
 ### Deletion of nodes
-For this part you have to implement three functions: <br>
+For this part you have to implement three functions:<br><br>
 `deleteFirstMatch()`- In this function you will delete the first node n that has value equals to v. If none of the nodes have a value equals to v, there will be no change made on the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteFirstMatch()` with value equals to 3. The linkedlist after deletion should look like this B(2), C(3). <br>
 
 `deleteAllMatches()`- In this function you will delete the all nodes which have a value equals to v. If none of the nodes have a value equals to v, there will be no change made on the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAllMatches()` with value equals to 3. The linkedlist after deletion should look like this B(2). <br>
