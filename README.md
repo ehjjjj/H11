@@ -81,30 +81,30 @@ Following are the files we provide:
 
 `L ` - This command means you have to print the length of the linkedlist. For example, If the linkedlist has 2, 3, 2. After `L `, you should print 3. (`getLength()`)<br>
 
-`Note: After each command you have to call print() function except for "L ". If the linkedlist is empty you should print new line` <br><br><br>
+`Note: After each command you have to call print() function except for "L ". If the linkedlist is empty you should print new line` <br>
 
-`Hint: you can use fgets() for reading commands from test files ( command per line), and strtok() for parsing the command by spaces`
+`Hint: you can use fgets() for reading commands from test files ( command per line), and strtok() for parsing the command by spaces` <br>
 
 To test your code, you will find the commands for the linkedlist operation in the test files.
 
 `NOTE:Please follow the printing format you find in the cases .txt files.`<br>
 To test your code, we provide you with 3 different cases:<br>
 
-The following command should create a boolean array of length 10, k=3, p=1. The output of this command is in case1.txt
-`./pe10 10 3 1 > case1.txt`<br>
+The following command will use the commands in the test1.txt, and operate the linkedlist as the commands suggest. The output is in outTest1.txt
+`./pe10 test1.txt`<br>
 
-The following command should create a boolean array of length 10, k=4, p=2. The output of this command is in case2.txt
-`./pe10 10 4 2 > case2.txt`<br>
+The following command will use the commands in the test2.txt, and operate the linkedlist as the commands suggest. The output is in outTest2.txt
+`./pe10 test2.txt`<br>
 
-The following command should create a boolean array of length 8, k=5, p=3. The output of this command is in case3.txt
-`./pe10 8 5 3  > case3.txt`<br>
+The following command will use the commands in the test3.txt, and operate the linkedlist as the commands suggest. The output is in outTest3.txt
+`./pe10 test3.txt`<br>
 
 
-`Note: There is a 15% penalty of your final grade, if you do not submit a Makefile. Also, your makefile should create "pe10" output file. Your makefile will be test if it creates an output file with name "pe10". "pe10.o" or "main.o" are not acceptable as output file name`
+`Attention: There is a 15% penalty of your final grade, if you have a memory leak. Also if you don't submit a makefile you will lose 5 points`
 
 Type the following command to zip your file.
 ```bash
-	zip pe10.zip pe10.c main.c Makefile
+	zip pe11.zip pe11.c main.c Makefile
 ```
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
