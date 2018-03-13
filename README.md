@@ -85,10 +85,9 @@ Following are the files we provide:
 
 `Hint: you can use fgets() for reading commands from test files (command per line), and strtok() for parsing the command by spaces` <br>
 
-To test your code, you will find the commands for the linkedlist operation in the test files.
 
 `NOTE:Please follow the printing format you find in the cases .txt files.`<br>
-To test your code, we provide you with 3 different cases:<br>
+To test your code, we provide you with 3 different tese cases:<br>
 
 The following command will use the commands in the test1.txt, and operate the linkedlist as the commands suggest. The output is in outTest1.txt
 `./pe10 test1.txt`<br>
