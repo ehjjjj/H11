@@ -46,15 +46,15 @@ For this part you have to implement three functions:<br><br>
 `deleteAt()`- In this function you will delete the node at index i if possible. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=0. The linkedlist after deletion should look like this B(2), C(3). Another example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=3. It is not possible. So,  the linkedlist will not change and it will look like this A(3), B(2), C(3).<br><br>
 
 ### Length of the linkedList
-For this part you have to implement one function:<br>
+For this part you have to implement one function:<br><br>
 `getLength()`- In this function you will traverse the linkedlist to count the number of nodes, and return it. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). And you want to `getLength()`. The function will return 4.<br><br>
 
 ### Deallocation of linkedlist
-For this part you have to implement one function:<br> 
+For this part you have to implement one function:<br><br>
 `freeMemory()`- In this function you will deallocate the linkedlist from memory.<br><br>
 
 ### Printing linkedlist
-For this part you have to implement one function:<br>
+For this part you have to implement one function:<br><br>
 `print()`- In this function you will print the fontent of the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). Calling `print()` will output `3,2,3,5`. Note that there is no extra comma at the beginning nor at the end. <br>
 
 `Note: If the linkedlist is empty you have to print an empty line '\n' `
