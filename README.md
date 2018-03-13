@@ -81,7 +81,7 @@ Following are the files we provide:
 
 `L ` - This command means you have to print the length of the linkedlist. For example, If the linkedlist has 2, 3, 2. After `L `, you should print 3. (`getLength()`)<br>
 
-`Note: After each command you have to call print() function except for "L ". If the linkedlist is empty you should print new line` <br>
+`Note: After each command you have to call print() function except for "L ". If the linkedlist is empty you should print a new line` <br>
 
 `Hint: you can use fgets() for reading commands from test files ( command per line), and strtok() for parsing the command by spaces` <br>
 
