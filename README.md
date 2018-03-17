@@ -26,7 +26,7 @@ For example, lets assume that we have a linkedlist of length 7, and k=2.
 
 
 ## Josephus problem V2 (optional) 50 points
-You will solve a modified jospehus problem using doubly linkedlist. The modifiction is that you will normally count `k` before taking out the  element but if you come across a number that is divisable by `q` while counting, you will take that number out and flip your direction (if you were moving forward you will go backward, vice versa). 
+You will solve a modified jospehus problem using doubly linkedlist. The modifiction is that you will count `k` before taking out the  element but if you come across a number that is divisable by `q` while counting, you will take that number out, flip your direction (if you were moving forward you will go backward, vice versa), and keep counting but in the opposite direction.
 
 For example, lets assume that we have a linkedlist of length 7, k=2, and q=3.
 
@@ -40,6 +40,21 @@ For example, lets assume that we have a linkedlist of length 7, k=2, and q=3.
 4	      //4 wins the game.
 </pre>
 
+Another example, lets assume that we have a linkedlist of length 10, k=5, and q=4.
+
+<pre>
+0 1 2 3 4 5 6 7 8 9 //index=0, 4 is divisable by 4. So, it will be out (count=4),direction flipped.
+0 1 2 3 5 6 7 8 9   //count=4, going backward. 3 is out (count=5).
+0 1 2 5 6 7 8 9     //index=2, 0 is divisable by 4. So, it will be out (count=2), direction flipped.
+1 2 5 6 7 8 9	    //count=2, going forward. 5 is out (count=5)
+1 2 6 7 8 9	    //index=6, 8 is divisable by 4. So, it will be out (count=2), direction flipped.
+1 2 6 7 9	    //count=2, going backward. 2 is out (count=5)
+1 6 7 9		    //index=1, 9 is out (count=5).
+1 6 7		    //index=7, 1 is out (count=5).
+6 7		    //index=7, 6 is out (count=5).
+7		    //7 wins the game
+
+</pre>
 
 
 
