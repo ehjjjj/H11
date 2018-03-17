@@ -1,9 +1,9 @@
-# HW11. Linkedlist
-## This is an Exercise, and it is related to HW10 and HW12.
+# HW11. josephus problem using Linkedlist
+## This is an Assignment, and it is related to HW10 and HW11.
 
 <strong>Please read the entire file before you start working on this exercise.</strong><br>
 
-In this Exercise you will build your own linkedlist data structure. Also, you will be implementing linkedlist operations.
+In this assignment you will build your own linkedlist data structure. Also, you will be implementing linkedlist operations.
  
 
 ## Learning Goals
