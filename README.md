@@ -1,109 +1,83 @@
-# HW11. josephus problem using Linkedlist
+# HW12. Josephus problem using LinkedList.
 ## This is an Assignment, and it is related to HW10 and HW11.
 
-<strong>Please read the entire file before you start working on this exercise.</strong><br>
+<strong>Please read the entire file before you ask any question.</strong><br>
 
-In this assignment you will build your own linkedlist data structure. Also, you will be implementing linkedlist operations.
- 
+In this Exercise you will solve a problem related to a certain counting-out game (Josephus problem) using linkedlist.
 
-## Learning Goals
-* Understand linkedlist.
-* Deepen your understanding of pointers and memory addresses.
-* Deepen your understanding of memory allocation and deallocation.
+# Learning Goals
+* Use linkedlist to solve josephus problem.
+* Use and learn doubly linkedlist.
+
+## Jospehus problem
+You will be solving jospehus problem in HW10 using linkedlist instead of arrays. The values of the nodes within the linkedlist will be the same as array indices. For example, if the linkedlist length is 5, then the values of nodes will be 0,1,2,3,4.
+
+For example, lets assume that we have a linkedlist of length 7, and k=2.
+
+<pre>
+0 1 2 3 4 5 6  //start at head (index=0), count 2, 2 will be out.
+0 1 3 4 5 6    //index=3, 5 is out
+0 1 3 4 6      //index=6, 1 is out
+0 3 4 6	       //index=3, 6 is out
+0 3 4	       //index=0, 4 is out
+0 3	       //index=0, 0 is out
+3	       // 3 wins the game
+</pre>
 
 
-## LinkedList
- Linked list is a data structure consisting of a group of nodes which together represent a sequence or a chain. Each node has a link or a pointer to the next node in the chain except for the last node (tail) in the linkedlist which is pointing at NULL. The first node in the linkedlist is the head node.
- 
- Why linkedlist?
- - Nodes don't have to be stored in contiguous memory locations.
- - The allocation is dynamic not static. The size of the linkedlist can be changed during the running time of the program (the size is not required to be known in advance).
- - insertion at (or deletion from) any position in constant time.
+## Josephus problem V2 (optional) 50 points
+You will solve a modified jospehus problem using doubly linkedlist. The modifiction is that you will normally count `k` before taking out the  element but if you come across a number that is divisable by `q` while counting, you will take that number out and flip your direction (if you were moving forward you will go backward, vice versa).
 
-## TO DO
-Mainly you have to work on impelementing four main operations:
- * Insert nodes to the linkedlist. </br>
- * Delete node from the linkedlist. </br>
- * Traverese the linkedlist to compute its length. </br>
- * Allocate memory for the nodes within the linkedlist, and deallocate nodes from memory. </br></br>
- 
-### Insertion of nodes
-For this part you have to implement three functions:<br><br>
-`insertFirst()`- In this function you will insert node n to the head of the linkedlist. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertFirst()` node D. The linkedlist after insertion should look like this D, A, B, C. <br>
 
-`insertLast()`- In this function you will insert node n to the tail of the linkedlist. For example, if the linkedlist has 3 nodes A, B, and C. And you want to `insertLast()` node D. The linkedlist after insertion should look like this A, B, C, D.<br>
 
-`insertAt()`- In this function you will insert node n at index i in the linkedlist if possible. For example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=0. The linkedlist after insertion should look like this D, A, B, C. Another example, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=3. The linkedlist after insertion should look like this A, B, C, D. But, if the linkedlist has 3 nodes A, B, and C. And you want to insert node D at index=4. It is not possible. So,  the linkedlist will not change and it will look like this A, B, C.<br>
+# TO DO
+<strong>josephus()</strong> </br>
+In this function you will implement the solution for Josephus problem. To do so, you will be using a boolean array that you have to initialize to 1's (true) beforehand. Based on the value of `k`, the values of the array will start flipping to 0's (false). The function should stop iterating when the array has only one value as 1 (true) left. Also, whenever the number of remaining elements (number of 1's) is divisible by `p` you should print out the array as will be shown next (call print() function).</br>
 
-`Note: we access the linkedlist as array, the first index is index=0 which is the head of the linkedlist.`<br><br>
+<strong>print()</strong>  </br>
+This function will print the boolean array in the following format: <br>
+* Print the index if its corresponding value in the array is true, Otherwise print X instead. For instance, If the array is of length
+   4, and it has values of true(index=0),false(index=1),true(index=2),false(index=3).<br> // the output should look like this: `0,X,2,X`  </br>
+* There should be no extra comma at the end nor at the beginning. For example, `,0,X,2,X` or `0,X,2,X,` formats are both wrong. </br>
+* Make sure that there is a new line at the end of the output.
 
-### Deletion of nodes
-For this part you have to implement three functions:<br><br>
-`deleteFirstMatch()`- In this function you will delete the first node n that has value equals to v. If none of the nodes have a value equals to v, there will be no change made on the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteFirstMatch()` with value equals to 3. The linkedlist after deletion should look like this B(2), C(3). <br>
-
-`deleteAllMatches()`- In this function you will delete the all nodes which have a value equals to v. If none of the nodes have a value equals to v, there will be no change made on the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAllMatches()` with value equals to 3. The linkedlist after deletion should look like this B(2). <br>
-
-`deleteAt()`- In this function you will delete the node at index i if possible. For example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=0. The linkedlist after deletion should look like this B(2), C(3). Another example, if the linkedlist has 3 nodes A(3), B(2), and C(3). And you want to `deleteAt()` with index=3. It is not possible. So,  the linkedlist will not change and it will look like this A(3), B(2), C(3).<br><br>
-
-### Length of the linkedList
-For this part you have to implement one function:<br><br>
-`getLength()`- In this function you will traverse the linkedlist to count the number of nodes, and return it. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). And you want to `getLength()`. The function will return 4.<br><br>
-
-### Deallocation of linkedlist
-For this part you have to implement one function:<br><br>
-`freeMemory()`- In this function you will deallocate the linkedlist from memory.<br><br>
-
-### Printing linkedlist
-For this part you have to implement one function:<br><br>
-`print()`- In this function you will print the content of the linkedlist. For example, if the linkedlist has 3 nodes A(3), B(2), C(3), and D(5). Calling `print()` will output `3,2,3,5`. Note that there is no extra comma at the beginning nor at the end. <br>
-
-`Note: If the linkedlist is empty you have to print an empty line '\n' `
-
+`NOTE: Violating this format will get you zero for this function`
 
 # Testing your code
 Following are the files we provide:
-1. `pe11.c` This file has all the functions to be implemented.
-2. `pe11.h`
-3. `main.c`This file has the main() function to be implemented.
-
-### Commands
-`insF v` - This command means you have to insert a node n at the head of the linkedlist with value v. For example, If the linkedlist has 2, and 3. After `insF 11`, the linkedlist should look like this 11, 2, 3. (`insertFirst()`)<br>
-
-`insL v` - This command means you have to insert a node n at the tail of the linkedlist with value v. For example, If the linkedlist has 2, and 3. After `insL 11`, the linkedlist should look like this 2, 3, 11. (`insertLast()`)<br>
-
-`insA v i` - This command means you have to insert a node n with value v at the index i. For example, If the linkedlist has 2, and 3. After `insA 11 1`, the linkedlist should look like this 2, 11, 3. (`insertAt()`)<br>
-
-`delFM v` - This command means you have to delete the first node with value v. For example, If the linkedlist has 2, 3, 2. After `delFM 2`, the linkedlist should look like this 3, 2. (`deleteFirstMatch()`)<br>
-
-`delAM v` - This command means you have to delete all nodes with value v. For example, If the linkedlist has 2, 3, 2. After `delAM 2`, the linkedlist should look like this 3. (`deleteAllMatches()`)<br>
-
-`delA i` - This command means you have to delete the node at index i. For example, If the linkedlist has 2, 3, 2. After `delA 1`, the linkedlist should look like this 2, 2. (`deleteAt()`)<br>
-
-`L ` - This command means you have to print the length of the linkedlist. For example, If the linkedlist has 2, 3, 2. After `L `, you should print 3. (`getLength()`)<br>
-
-`Note: After each command you have to call print() function except for "L ". If the linkedlist is empty you should print a new line` <br>
-
-`Hint: you can use fgets() for reading commands from test files (command per line), and strtok() for parsing the command by spaces` <br>
-
+1. `pe10.c` This file should have josephus() and print() functions implemented.
+2. `pe10.h` 
+3. `main.c`This file should have the main() function implemented.
 
 `NOTE:Please follow the printing format you find in the cases .txt files.`<br>
-To test your code, we provide you with 3 different tese cases:<br>
+To test your code, we provide you with 6 different cases:<br>
 
-The following command will use the commands in the test1.txt, and operate the linkedlist as the commands suggest. The output is in outTest1.txt
-`./pe10 test1.txt`<br>
+The following command should create a boolean array of length 10, k=3, p=1. The output of this command is in case1.txt
+`./pe10 10 3 1 > case1.txt`<br>
 
-The following command will use the commands in the test2.txt, and operate the linkedlist as the commands suggest. The output is in outTest2.txt
-`./pe10 test2.txt`<br>
+The following command should create a boolean array of length 10, k=4, p=2. The output of this command is in case2.txt
+`./pe10 10 4 2 > case2.txt`<br>
 
-The following command will use the commands in the test3.txt, and operate the linkedlist as the commands suggest. The output is in outTest3.txt
-`./pe10 test3.txt`<br>
+The following command should create a boolean array of length 8, k=5, p=3. The output of this command is in case3.txt
+`./pe10 8 5 3  > case3.txt`<br>
+
+The following command should create a boolean array of length 8, k=9, p=1. The output of this command is in case4.txt
+`./pe10 8 9 1  > case4.txt`<br>
+
+The following command should create a boolean array of length 41, k=3, p=1. The output of this command is in case5.txt
+`./pe10 41 3 1 > case5.txt`<br>
+
+The following command should create a boolean array of length 100, k=3, p=20. The output of this command is in case6.txt
+`./pe10 100 3 20 > case6.txt`<br>
 
 
-`Attention: There is a 15% penalty of your final grade, if you have a memory leak. Also if you don't submit a makefile you will lose 5 points`
+To test your code. You have to first compile it and then run one of the following commands. <br>
+
+`Note: There is a 15% penalty of your final grade, if you do not submit a Makefile. Also, your makefile should create "pe10" output file. Your makefile will be tested if it creates an output file with name "pe10". "pe10.o" or "main.o" are not acceptable as output file name`
 
 Type the following command to zip your file.
 ```bash
-	zip pe11.zip pe11.c main.c Makefile
+	zip pe10.zip pe10.c main.c Makefile
 ```
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
