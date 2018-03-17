@@ -28,19 +28,7 @@ For example, lets assume that we have a linkedlist of length 7, and k=2.
 ## Josephus problem V2 (optional) 50 points
 You will solve a modified jospehus problem using doubly linkedlist. The modifiction is that you will count `k` before taking out the  element but if you come across a number that is divisable by `q` while counting, you will take that number out, flip your direction (if you were moving forward you will go backward, vice versa), and keep counting but in the opposite direction.
 
-For example, lets assume that we have a linkedlist of length 7, k=2, and q=3.
-
-<pre>
-0 1 2 3 4 5 6 //start at head(index=0), count 2, will be out.
-0 1 3 4 5 6   //index =3 (3 won't be out because you have not reached it while counting), 5 is out.
-0 1 3 4 6     //index=6 (6 won't be out for the same reason as 3), 0 is divisable by 3 (count=1). Direction flipped.
-1 3 4 6       //keep counting but in backward, 6 is out (count=2), also 6 is divisable by 3. Direction flipped.
-1 3 4	      //index=1, 3 is out (count=1). Direction flipped.
-1 4 	      //keep couting but in backward, 1 is out.
-4	      //4 wins the game.
-</pre>
-
-Another example, lets assume that we have a linkedlist of length 10, k=5, and q=4.
+for example, lets assume that we have a linkedlist of length 10, k=5, and q=4.
 
 <pre>
 0 1 2 3 4 5 6 7 8 9 //index=0, 4 is divisable by 4. So, it will be out (count=4),direction flipped.
@@ -55,6 +43,20 @@ Another example, lets assume that we have a linkedlist of length 10, k=5, and q=
 7		    //7 wins the game
 
 </pre>
+
+Another example, lets assume that we have a linkedlist of length 7, k=2, and q=3.
+
+<pre>
+0 1 2 3 4 5 6 //index=0, count 2, 2 will be out.
+0 1 3 4 5 6   //index =3 (3 won't be out because you have not reached it while counting), 5 is out.
+0 1 3 4 6     //index=6 (6 won't be out for the same reason as 3), 0 is divisable by 3 (count=1). Direction flipped.
+1 3 4 6       //keep counting but in backward, 6 is out (count=2), also 6 is divisable by 3. Direction flipped.
+1 3 4	      //index=1, 3 is out (count=1). Direction flipped.
+1 4 	      //keep couting but in backward, 1 is out.
+4	      //4 wins the game.
+</pre>
+
+
 
 
 
