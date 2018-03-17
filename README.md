@@ -32,7 +32,7 @@ For example, lets assume that we have a linkedlist of length 7, k=2, and q=3.
 
 <pre>
 0 1 2 3 4 5 6 //start at head(index=0), count 2, will be out.
-0 1 3 4 5 6   //index =3 (3 won't be out because you have not reached while counting), 5 is out.
+0 1 3 4 5 6   //index =3 (3 won't be out because you have not reached it while counting), 5 is out.
 0 1 3 4 6     //index=6 (6 won't be out for the same reason as 3), 0 is divisable by 3 (count=1). Direction flipped.
 1 3 4 6       //keep counting but in backward, 6 is out (count=2), also 6 is divisable by 3. Direction flipped.
 1 3 4	      //index=1, 3 is out (count=1). Direction flipped.
