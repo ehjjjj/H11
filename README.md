@@ -10,7 +10,7 @@ In this Exercise you will solve a problem related to a certain counting-out game
 * Use and learn doubly linkedlist.
 
 ## Jospehus problem
-You will be solving jospehus problem in HW10 using linkedlist instead of arrays. The values of the nodes within the linkedlist will be the same as array indices. For example, if the linkedlist length is 5, then the values of nodes will be 0,1,2,3,4.
+You will be solving jospehus problem in HW10 using linkedlist instead of arrays. The values of the nodes within the linkedlist will be the same as array indices. For example, if the linkedlist is of length is 5, then the values of nodes will be 0,1,2,3,4.
 
 For example, lets assume that we have a linkedlist of length 7, and k=2.
 
@@ -26,7 +26,15 @@ For example, lets assume that we have a linkedlist of length 7, and k=2.
 
 
 ## Josephus problem V2 (optional) 50 points
-You will solve a modified jospehus problem using doubly linkedlist. The modifiction is that you will normally count `k` before taking out the  element but if you come across a number that is divisable by `q` while counting, you will take that number out and flip your direction (if you were moving forward you will go backward, vice versa).
+You will solve a modified jospehus problem using doubly linkedlist. The modifiction is that you will normally count `k` before taking out the  element but if you come across a number that is divisable by `q` while counting, you will take that number out and flip your direction (if you were moving forward you will go backward, vice versa). 
+
+For example, lets assume that we have a linkedlist of length 7, k=2, and q=3.
+
+<pre>
+0 1 2 3 4 5 6 //start at head(index=0), count 2, will be out.
+0 1 3 4 5 6 // index =3 (even though 3 is divisable by 3,
+</pre>
+
 
 
 
