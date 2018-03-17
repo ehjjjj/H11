@@ -124,6 +124,8 @@ The following command should create and initialize a doubly likedlist of length 
 
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
+`Attention: There is a 10% penalty of your final grade, if you have a memory leak. Also if you don't submit a makefile you will lose 5 points`
+
 
 
 Type the following command to zip your file.
