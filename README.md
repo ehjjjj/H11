@@ -89,7 +89,7 @@ Following are the files we provide:
 
 `NOTE:Please follow the printing format you find in the cases .txt files.`<br>
 To test your code, we provide you with 10 different cases:<br>
-
+#### Josephus cases
 The following command should create and initialize a singly likedlist of length 10, k=3, p=1. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case1.txt
 `./pa12 -J 10 3 1 > case1.txt`<br>
 
@@ -108,6 +108,8 @@ The following command should create and initialize a singly likedlist of length 
 The following command should create and initialize a singly likedlist of length 100, k=3, p=20. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case6.txt
 `./pa12 -J 100 3 20 > case6.txt`<br>
 
+#### Josephus V2 cases
+
 The following command should create and initialize a doubly likedlist of length 8, k=5, q=4. `-J2` to solve the modified Josephus problem using the created doubly linkedlist. The output of this command is in case7.txt
 `./pa12 -J2 8 5 4 > case7.txt` <br>
 
@@ -123,11 +125,10 @@ The following command should create and initialize a doubly likedlist of length 
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
-`Note: There is a 10% penalty of your final grade, if you do not submit a Makefile. Also, your makefile should create "pe10" output file. Your makefile will be tested if it creates an output file with name "pe10". "pe10.o" or "main.o" are not acceptable as output file name`
 
 Type the following command to zip your file.
 ```bash
-	zip pe10.zip pe10.c main.c Makefile
+	zip pa12.zip pe12.c main.c Makefile
 ```
 <strong>You will not get any credits if the submitted file is not zipped</strong>
 
