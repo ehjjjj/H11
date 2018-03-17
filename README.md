@@ -62,42 +62,68 @@ Another example, lets assume that we have a linkedlist of length 7, k=2, and q=3
 
 # TO DO "Josephus"
 <strong>init()</strong> </br>
-In this function you will create and intialize a singly linkedlist of length `L`. For example, if the linkedlist has a length 7; the values of the linkedlist will be `0,1,2,3,4,5,6`.<br>
+In this function you will create and intialize a singly linkedlist of length `L`. For example, if the linkedlist has a length 7; the values of the nodes within linkedlist will be `0,1,2,3,4,5,6`.<br>
 
 <strong>josp()</strong>  </br>
+In this function you will implement the solution for josephus problem using singly linkedlist. 
+
+<strong>print()</strong> </br>
+In this function you will print the values of the nodes within the singly linkedlist if the number of remaining nodes is divisable by `p`. The values will be separated by commas. For example, if the nodes within the linkedlist have the following values `1 3 4 6`, the output should be like this `1,3,4,6`. Please make sure that you don't have an extra comma at the beginning nor at the end. 
+
+# TO DO "Josephus V2" (Optional) 50 points
+<strong>init2()</strong> </br>
+In this function you will create and intialize a doubly linkedlist of length `L`. For example, if the linkedlist has a length 7; the values of the nodes within linkedlist will be `0,1,2,3,4,5,6`.<br>
+
+<strong>josp2()</strong>  </br>
+In this function you will implement the solution for the modified verison of josephus problem using doubly linkedlist. 
+
+<strong>print2()</strong> </br>
+In this function you will print the values of the nodes within the doubly linkedlist after any delete operation (caused by value of the node being divisible by 'q' or count=`k`). The values will be separated by commas. For example, if the nodes within the linkedlist have the following values `1 3 4 6`, the output should be like this `1,3,4,6`. Please make sure that you don't have an extra comma at the beginning nor at the end. 
 
 
 # Testing your code
 Following are the files we provide:
-1. `pe10.c` This file should have josephus() and print() functions implemented.
-2. `pe10.h` 
-3. `main.c`This file should have the main() function implemented.
+1. `pa12.c`.
+2. `pa12.h`. 
+3. `main.c`.
 
 `NOTE:Please follow the printing format you find in the cases .txt files.`<br>
-To test your code, we provide you with 6 different cases:<br>
+To test your code, we provide you with 10 different cases:<br>
 
-The following command should create a boolean array of length 10, k=3, p=1. The output of this command is in case1.txt
-`./pe10 10 3 1 > case1.txt`<br>
+The following command should create and initialize a singly likedlist of length 10, k=3, p=1. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case1.txt
+`./pa12 -J 10 3 1 > case1.txt`<br>
 
-The following command should create a boolean array of length 10, k=4, p=2. The output of this command is in case2.txt
-`./pe10 10 4 2 > case2.txt`<br>
+The following command should create and initialize a singly likedlist of length 10, k=4, p=2. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case2.txt
+`./pa12 -J 10 4 2 > case2.txt`<br>
 
-The following command should create a boolean array of length 8, k=5, p=3. The output of this command is in case3.txt
-`./pe10 8 5 3  > case3.txt`<br>
+The following command should create and initialize a singly likedlist of length 8, k=5, p=3. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case3.txt
+`./pa12 -J 8 5 3 > case3.txt`<br>
 
-The following command should create a boolean array of length 8, k=9, p=1. The output of this command is in case4.txt
-`./pe10 8 9 1  > case4.txt`<br>
+The following command should create and initialize a singly likedlist of length 8, k=9, p=1. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case4.txt
+`./pa12 -J 8 9 1 > case4.txt`<br>
 
-The following command should create a boolean array of length 41, k=3, p=1. The output of this command is in case5.txt
-`./pe10 41 3 1 > case5.txt`<br>
+The following command should create and initialize a singly likedlist of length 41, k=3, p=1. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case5.txt
+`./pa12 -J 41 3 1 > case5.txt`<br>
 
-The following command should create a boolean array of length 100, k=3, p=20. The output of this command is in case6.txt
-`./pe10 100 3 20 > case6.txt`<br>
+The following command should create and initialize a singly likedlist of length 100, k=3, p=20. `-J` to solve Josephus problem using the created linkedlist. The output of this command is in case6.txt
+`./pa12 -J 100 3 20 > case6.txt`<br>
+
+The following command should create and initialize a doubly likedlist of length 8, k=5, q=4. `-J2` to solve the modified Josephus problem using the created doubly linkedlist. The output of this command is in case7.txt
+`./pa12 -J2 8 5 4 > case7.txt` <br>
+
+The following command should create and initialize a doubly likedlist of length 15, k=3, q=4. `-J2` to solve the modified Josephus problem using the created doubly linkedlist. The output of this command is in case8.txt
+`./pa12 -J2 15 3 4 > case8.txt` <br>
+
+The following command should create and initialize a doubly likedlist of length 8, k=3, q=9. `-J2` to solve the modified Josephus problem using the created doubly linkedlist. The output of this command is in case9.txt
+`./pa12 -J2 8 3 9 > case9.txt` <br>
+
+The following command should create and initialize a doubly likedlist of length 20, k=4, q=5. `-J2` to solve the modified Josephus problem using the created doubly linkedlist. The output of this command is in case9.txt
+`./pa12 -J2 20 4 5 > case10.txt` <br>
 
 
 To test your code. You have to first compile it and then run one of the following commands. <br>
 
-`Note: There is a 15% penalty of your final grade, if you do not submit a Makefile. Also, your makefile should create "pe10" output file. Your makefile will be tested if it creates an output file with name "pe10". "pe10.o" or "main.o" are not acceptable as output file name`
+`Note: There is a 10% penalty of your final grade, if you do not submit a Makefile. Also, your makefile should create "pe10" output file. Your makefile will be tested if it creates an output file with name "pe10". "pe10.o" or "main.o" are not acceptable as output file name`
 
 Type the following command to zip your file.
 ```bash
